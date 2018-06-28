@@ -30,6 +30,6 @@
     <%= f.text_area :description %>
   </p>
   <p>
-    <%= f.submit "Register" %>
+    <%= f.submit (@user.new_record? ? "Register" : "Update") %>
   </p>
 <% end %>
